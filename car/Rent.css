@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Condiment&family=Jim+Nightshade&family=Piedra&family=Rubik+Glitch&family=Splash&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    /* font-family: sans-serif; */
+    color: #fff;
+    background-color: #161616;
+}
+
+.navbar{
+    height: 100px;
+    background:rgb(68, 66, 66)
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+    font-family: 'Playfair Display', serif;
+}
+.navbar a:hover{
+    color: black;
+}
+.navbar img {
+    height: 80px;
+    width: 80px;
+    margin-right: 40px;
+    margin :5px 30px;
+    /* color: white; */
+    border-radius: 50%;
+}
+header{
+    height: 100vh;
+    min-height: 30em;
+    background: 
+    url(black\ car\ back.jpg)
+    no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction:column;
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color:	rgb(35, 36, 36); 
+    padding: 10px 20px;
+  justify-content: space-between; 
+  position: sticky;
+  margin-left: auto;
+  top:0;
+  z-index: 1000;
+}
+.navlinks{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    font-size: 1.50vw;
+}
+nav a{
+    color: #fff;
+    text-align: center;
+    font-size: 1.50vw;
+
+    font-weight: 200;
+}
+nav a:hover{
+    color: #eee;
+}
+.headerbody {
+    padding-bottom: 8%;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    height: 100%;
+}
+.headerbody h1{
+     font-family: "Jim Nightshade", cursive;
+    font-size: 50px;
+    margin-bottom: 10px;
+    padding-left: 25px
+}
+.headerbody h2{
+    font-family: "Condiment", cursive;
+    font-size: 40px;
+    padding-right: 20px;
+    margin-bottom: 0.5em;
+}
+.headerbody p{
+    font-family: "Piedra", serif;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.search{
+    /* background: url(black\ car\ back.jpg); */
+    width: 100%;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: transparent; */
+}
+form{
+    background:rgba(249, 247, 247, 0.1);
+    /* background of search box */
+    width: 600px;
+    height: 55px;
+    display: flex;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+form input{
+    flex: 1;
+    border:none;
+    outline: none;
+    background: transparent;
+    /* color: #fff; */
+    color: #0e0d0d;
+    padding: 10px 20px;
+    font-size: 1em;
+    /* font-weight:500; */
+    
+}
+form input::placeholder {
+    color: #545050; /* Brighter color for placeholder text */
+    opacity: 1; /* Ensure the opacity is at full */
+}
+form button{
+     background: rgba(255, 99, 71, 0.8);
+     padding: 10px 30px;
+     border:none;
+     outline: none;
+     color: #fff;
+     letter-spacing: 1px;
+     cursor: pointer;
+     border-radius: 0 30px 30px 0;
+     transition: background 0.3 ease;
+}
+form button:hover{
+    background: rgba(255, 99, 71, 1);
+}
+    form .fa-search{
+        color: #777;
+        align-self: center;
+        padding: 10px 20px;
+
+    }
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 1.5em;
+        }
+        p {
+            font-size: 0.8em;
+        }
+        .navlinks {
+            font-size: 2vw;
+        }
+        form {
+            width: 90%;
+        }
+    }
+    @media (max-width: 480px) {
+        h1 {
+            font-size: 1.5em;
+        }
+        h2 {
+            font-size: 1.2em;
+        }
+        p {
+            font-size: 0.7em;
+        }
+        .navlinks {
+            font-size: 3vw;
+        }
+        form {
+            width: 100%;
+        }
+    }
+ 
+footer {
+    background-color: #000;
+    position: relative;
+    width: 100%;
+    padding: 3rem 1rem;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.row .face {
+    color: #ff014fff;
+}
+
+.face h3 {
+    padding-left: 50px;
+    font-size: 23px;
+}
+
+.footer-col {
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding-right: 10px;
+}
+
+.footer-col img {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.row .footer-col p {
+    color: #bbb;
+    font-size: 18px;
+}
+
+.footer-col h3 {
+    color: #ff014fff;
+    margin-bottom: 20px;
+    font-size: 23px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ff5733;
+}
+
+.social {
+    padding-top: 20px;
+}
+
+.social a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social a:hover {
+    color: gray;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navlinks {
+        font-size: 3.5vw;
+        flex-direction: column;
+    }
+
+    .main {
+        padding: 100px 50px;
+    }
+
+    .content h2 {
+        font-size: 10vw;
+    }
+
+    .content h3 {
+        font-size: 6vw;
+    }
+
+    .content p {
+        font-size: 5vw;
+    }
+
+    .button {
+        font-size: 5vw;
+    }
+
+    .whitespace-odd .content-wrapper,
+    .whitespace-even .content-wrapper {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .whitespace-odd h3,
+    .whitespace-even h3 {
+        font-size: 5vw;
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .card {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar img {
+        height: 60px;
+        width: 60px;
+        margin-right: 20px;
+    }
+
+    .navbar a {
+        padding: 10px 10px;
+        margin-right: 10px;
+    }
+
+    .content h2 {
+        font-size: 12vw;
+    }
+
+    .content h3 {
+        font-size: 8vw;
+    }
+
+    .content p {
+        font-size: 7vw;
+    }
+
+    .button {
+        font-size: 6vw;
+    }
+
+    .whitespace-odd h2,
+    .whitespace-even h2 {
+        font-size: 6vw;
+    }
+
+    .whitespace-odd h3,
+    .whitespace-even h3 {
+        font-size: 4vw;
+    }
+}
